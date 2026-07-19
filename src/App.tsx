@@ -2,13 +2,22 @@ import { Navigation } from './components/Navigation';
 import { Hero } from './components/Hero';
 import { Showcase } from './components/Showcase';
 import { Footer } from './components/Footer';
+import { ParticleField } from './components/ParticleField';
+import { MagneticCursor } from './components/MagneticCursor';
 
 function App() {
   return (
-    <div className="relative w-full min-h-screen bg-[#0D0D0D] text-[#E5E5E5] font-sans selection:bg-[#E5E5E5] selection:text-[#0D0D0D] overflow-hidden">
+    <div className="relative w-full min-h-screen bg-[#0D0D0D] text-[#E5E5E5] font-sans selection:bg-[#E5E5E5] selection:text-[#0D0D0D] overflow-hidden cursor-none md:cursor-none">
+      {/* Three.js Particle Field — immersive 3D background */}
+      <ParticleField />
+
+      {/* Atmospheric layers */}
       <div className="ambient-cloud"></div>
       <div className="film-grain"></div>
-      
+
+      {/* Magnetic cursor */}
+      <MagneticCursor />
+
       <Navigation />
       <main className="relative z-10">
         <Hero />
