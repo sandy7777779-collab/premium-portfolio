@@ -4,6 +4,7 @@ import { Showcase } from './components/Showcase';
 import { Footer } from './components/Footer';
 import { ParticleField } from './components/ParticleField';
 import { MagneticCursor } from './components/MagneticCursor';
+import { ScrollCurve } from './components/ScrollCurve';
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
       {/* Atmospheric layers */}
       <div className="ambient-cloud"></div>
       <div className="film-grain"></div>
+
+      {/* Scroll-tracking curve */}
+      <ScrollCurve />
 
       {/* Magnetic cursor */}
       <MagneticCursor />
