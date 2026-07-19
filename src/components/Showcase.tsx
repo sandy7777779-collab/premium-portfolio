@@ -24,7 +24,7 @@ const showcases = [
     id: '03',
     title: 'Motion & Media',
     description: 'Crafting delicate, structural animations and fluid interactions that respect the user\'s attention and device performance.',
-    video: '/videos/WhatsApp Video 2026-07-18 at 8.56.30 AM.mp4',
+    video: '/videos/birds_eye_view.mp4',
     align: 'left' as const
   }
 ];
